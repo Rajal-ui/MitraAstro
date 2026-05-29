@@ -613,7 +613,7 @@ html:not(.dark-mode) .glow:hover {
 .headline_font {
   font-family: Georgia, serif;
   /* Custom headline font assignment */
-  color: var(--toggle-bg);
+  color: var(--text-color);
   font-size: 2.25rem;
   font-weight: normal;
   margin: 0;
@@ -661,7 +661,7 @@ html:not(.dark-mode) .glow:hover {
   min-width: 300px;
   background-color: var(--surface-container--);
   border: 1px solid var(--border-subtle--);
-  color: var(--toggle-bg);
+  color: var(--text-color);
   border-radius: 1rem;
   overflow: hidden;
   position: relative;
@@ -768,4 +768,83 @@ html:not(.dark-mode) .glow:hover {
   color: var(--text-color);
   font-size: 1rem;
   transition: border-color 0.3s ease;
+}
+.kundali-container{
+  margin: 8rem; 
+display: grid; 
+grid-template-columns: repeat(1, minmax(0, 1fr)); 
+align-items: center; 
+gap: 4rem; 
+border-radius: 1.5rem; 
+border: 1px solid rgba(255,255,255,0.05); 
+padding: 2rem; 
+padding-left: 2rem; 
+padding-right: 2rem;
+}
+.kundali-form{
+  position: relative; 
+transform: translate(0, 0) rotate(0) skewX(0) skewY(0) scaleX(1) scaleY(1); 
+overflow: hidden; 
+border-radius: 1rem; 
+border: 1px solid var(--text-variant--); 
+padding: 2rem;
+}
+.kundali-form:hover{
+  border-color: var(--text-primary--); 
+  transform: translate(0, -4px) rotate(0) skewX(0) skewY(0) scaleX(1.02) scaleY(1.02); 
+}
+.kundali-form canvas{
+  display: block;
+pointer-events: none; 
+position: absolute; 
+inset: 0px; 
+height: 100%; 
+width: 100%;
+background-color: var(--surface-container--);}
+.kundali-form form{
+  position: relative; 
+z-index: 20; 
+margin-top: calc(1.5rem * calc(1 - 0)); 
+margin-bottom: calc(1.5rem * 0);}
+.input-group{
+  margin-top: calc(0.5rem * calc(1 - 0)); 
+margin-bottom: calc(0.5rem * 0);
+}
+.kundali_items{
+  font-size: 10px; 
+font-weight: 700; 
+text-transform: uppercase; 
+letter-spacing: 0.1em;
+color: var(--text-primary--);
+}
+.kundali_input_{
+  width: 100%; background-color: var(--surface-container--) ;filter:brightness(1.9); 
+border: none;
+border-bottom-width: 1px; 
+padding-top: 0.5rem; 
+padding-bottom: 0.5rem; 
+font-size: 0.875rem; 
+line-height: 1.25rem; 
+color: rgb(255,255,255); 
+outline: 2px solid transparent; 
+outline-offset: 2px; 
+transition-property: all; 
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
+transition-duration: 150ms;
+}
+.submitbtn{
+  margin-top: 1rem; 
+width: 100%; 
+border-radius: 9999px; 
+padding-top: 1rem; 
+padding-bottom: 1rem; 
+font-weight: 700; 
+transition-property: all; 
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
+transition-duration: 150ms; 
+transform: translate(0, 0) rotate(0) skewX(0) skewY(0) scaleX(1.05) scaleY(1.05);}
+.submitbtn:hover{
+  background-color: var(--text-primary--); 
+  color: #111827; 
+  transform: translate(0, -2px) rotate(0) skewX(0) skewY(0) scaleX(1.05) scaleY(1.05);
 }
