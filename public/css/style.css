@@ -1003,7 +1003,7 @@ html:not(.dark-mode) .glow:hover {
 }
 
 .contact-section {
-  margin: 8rem auto 0;
+  margin: auto ;
   max-width: 40rem;
   padding: 0 1rem;
   color: var(--text-color);

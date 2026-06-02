@@ -68,22 +68,7 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
-    margin: 0;
-    font-family: 'Muli', sans-serif;
-    color: var(--text-primary);
-    line-height: 1.6;
-    min-height: 100vh;
-    background-image: url('../assets/Rotating Round Frame with Zodiac Signs_ Colorful Constellations on Starry Night Background_.gif');
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    background-size: cover;
-    background-color: #0f172a;
-}
-
-img,
-svg {
+img,svg {
     display: block;
     max-width: 100%;
 }
@@ -231,9 +216,8 @@ html:not(.dark-mode) .login-link:hover {
 .container-tag{
   background-color: #080e1a;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
-  padding: 4rem 3rem;
+  padding: 2rem 3rem;
   width: 100%;
-  margin-top: 6rem;
   position: relative;
   overflow: hidden;
 }
