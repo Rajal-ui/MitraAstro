@@ -5,9 +5,10 @@ A modern, highly responsive Vedic Astrology landing page platform featuring an e
 ---
 
 ## 🚀 Live Demo & Deployment
-* **Reference Site:** [MitraAstro Netlify](https://mitraastro.netlify.app/)
+* **Live At:**[MitraAstro](https://mitraastro-clone.netlify.app/)
 * **Deployment Platform:** Netlify (Static Frontend) / Local Node.js Server
 * **SSL/Security:** Auto-provisioned via Let's Encrypt (HTTP → HTTPS enforced)
+* * **Reference Site:** [MitraAstro Netlify](https://mitraastro.netlify.app/)
 
 ---
 
