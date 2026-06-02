@@ -21,7 +21,6 @@ A modern, highly responsive Vedic Astrology landing page platform featuring an e
 ### Backend & Database
 * **Server Environment:** Native Node.js (`http`, `fs`, and `path` core modules)
 * **Database:** MySQL / PostgreSQL (ACID-compliant relational storage)
-* **Authentication:** Google OAuth 2.0 Identity Services & JSON Web Tokens (JWT)
 
 ---
 
@@ -35,7 +34,7 @@ A modern, highly responsive Vedic Astrology landing page platform featuring an e
     * *Spiritual E-Commerce Shop:* Product grid interface for curated remedies with placeholder cart state machines.
     * *About & Services:* High-end catalogs detailing Vedic consultation frameworks, profiles, and legacy metrics.
 * **Dynamic Static File Loader:** Custom built-in Node.js asset routing utilizing explicit MIME-type mappings for safe browser rendering.
-* **Authentication Gateway:** Secure Node.js server route processing Google OAuth 2.0 redirects, returning client-side cached JWTs mapped to the `Authorization: Bearer` header.
+* **Authentication Gateway:** Secure Node.js server route processing Google OAuth 2.0 redirects, returning client-side cached JWTs mapped to the `Authorization: Bearer` header. (NOT YET BUILT)
 
 ### Out of Scope (Phase 1)
 * Live production payment gateway integrations.
@@ -59,7 +58,7 @@ mitraastro/
 │   ├── js/
 │   │   └── script.js        # LocalStorage theme caching & mobile DOM navigation scripts
 │   └── index.html           # Root semantic document & SEO metadata
-├── app.js                   # Native Node.js HTTP server & routing engine
+├── App.js                   # Native Node.js HTTP server & routing engine
 ├── .gitignore               # Configured to ignore node_modules
 ├── package.json             # App scripts and project metadata
 └── README.md
@@ -80,7 +79,7 @@ const preferredTheme = localStorage.getItem('theme') ||
 document.documentElement.classList.toggle('dark-mode', preferredTheme === 'dark');
 ```
 
-### 2. Secure Request Loop
+### 2. Secure Request Loop (FUTURE DEVELOPMENT)
 
 ```text
 [Client Form Actions] 
@@ -102,7 +101,7 @@ Authorization: Bearer <token>
 ### Prerequisites
 
 * Node.js (v18.x or higher recommended)
-* MySQL or PostgreSQL local instance
+* MySQL or PostgreSQL local instance (FUTURE DEVELOPMENT)
 
 ### Setup Steps
 
@@ -117,19 +116,7 @@ cd MitraAstro
 npm install
 ```
 
-3. **Environment Configuration:**
-Create a `.env` file in the root directory and add your credentials:
-```env
-PORT=5000
-DB_HOST=localhost
-DB_USER=your_db_user
-DB_PASS=your_db_password
-DB_NAME=mitraastro_db
-GOOGLE_CLIENT_ID=your_google_client_id
-JWT_SECRET=your_jwt_encryption_key
-```
-
-4. **Run the local development server:**
+3. **Run the local development server:**
 To launch with hot-reloading (auto-restarts when you modify files):
 ```bash
 npm run dev
