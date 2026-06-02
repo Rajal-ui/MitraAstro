@@ -30,10 +30,10 @@
                     <li><a href="#">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#services">Services</a></li>
-                    <li><a href="#KG">Kundli Generator</a></li>
+                    <li><a href="#kg">Kundli Generator</a></li>
                     <li><a href="#shop">Shop</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <li><a class="login-link" href="#">Login</a></li>
+                    <li><a class="login-link" href="#login-section">Login</a></li>
                     <li>
                         <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
                             <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
@@ -95,6 +95,67 @@
                         src="https://www.astromitra.com/Sassets/img/1200/vedic-astrology-reading.webp"
                         alt="Professional Vedic astrology birth chart reading consultation" width="360px" height="500px"
                         loading="lazy" title="Expert Vedic Astrology Reading Services">
+                </div>
+            </div>
+        </section>
+        <section id="login-section" class="login-section">
+            <div class="login-shell container">
+                <div class="login-side">
+                    <div class="login-side-content">
+                        <span class="login-eyebrow">Secure access for members</span>
+                        <h2>Sign in to unlock readings, bookings, and personalised guidance.</h2>
+                        <p>Login to MitraAstro to manage your profile, view astrology reports, and continue your
+                            spiritual journey.</p>
+                        <div class="login-features">
+                            <div class="feature-item">
+                                <strong>Fast access</strong>
+                                <span>Remembered preferences for faster checkout.</span>
+                            </div>
+                            <div class="feature-item">
+                                <strong>Member perks</strong>
+                                <span>Exclusive forecasts, offers, and astrology alerts.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="login-side-glow"></div>
+                </div>
+                <div class="login-card">
+                    <div class="auth-switch" role="tablist" aria-label="Authentication mode">
+                        <button type="button" class="auth-tab active" data-mode="login">Log In</button>
+                        <button type="button" class="auth-tab" data-mode="signup">Sign Up</button>
+                    </div>
+                    <h1 id="auth-title">Log In</h1>
+                    <form id="auth-form" class="auth-form">
+                        <div class="form-row name-fields hidden">
+                            <label>
+                                <span>First Name</span>
+                                <input id="first-name" type="text" placeholder="First Name">
+                            </label>
+                            <label>
+                                <span>Last Name</span>
+                                <input id="last-name" type="text" placeholder="Last Name">
+                            </label>
+                        </div>
+                        <label class="input-group">
+                            <span>Email</span>
+                            <input id="email" type="email" placeholder="Enter your email" required>
+                        </label>
+                        <label class="input-group">
+                            <span>Password</span>
+                            <input id="password" type="password" placeholder="Enter your password" required>
+                        </label>
+                        <label class="input-group confirm-password hidden">
+                            <span>Confirm Password</span>
+                            <input id="confirm-password" type="password" placeholder="Confirm your password">
+                        </label>
+                        <button id="auth-submit" type="submit" class="primary-btn">Log In</button>
+                    </form>
+                    <p class="auth-note">or continue with</p>
+                    <div class="social-buttons">
+                        <button type="button" class="social-btn google" aria-label="Continue with Google">G</button>
+                        <button type="button" class="social-btn facebook" aria-label="Continue with Facebook">f</button>
+                        <button type="button" class="social-btn apple" aria-label="Continue with Apple"></button>
+                    </div>
                 </div>
             </div>
         </section>
@@ -342,42 +403,52 @@
             </div>
         </section>
         <!-- Kundli Generator -->
-        <section id="kundli">
+        <section id="kg">
             <div class="kundali-container">
                 <div style="transform: translate(0, 0) rotate(0) skewX(0) skewY(0) scaleX(1) scaleY(1);">
                     <span class="sub_heading_style">FREE &amp; INSTANT</span>
                     <h2 class="headline_font">Generate Your Free Kundli</h2>
-                    <p class="text">Access your digital birth chart instantly. Our system uses high-precision astronomical data to calculate your planetary positions with Vedic accuracy.</p>
+                    <p class="text">Access your digital birth chart instantly. Our system uses high-precision
+                        astronomical data to calculate your planetary positions with Vedic accuracy.</p>
                     <div class="icons">
                         <div class="flex-shrink: 0; border-radius: 0.5rem;padding: 0.75rem;">
-                            <span class="shopbtn">✔️</span></div>
-                            <div>
-                                <h4 class="font-size: 0.875rem; line-height: 1.25rem;font-weight: 700; glow">Privacy Guaranteed</h4>
-                                <p class="text">Your birth details are never stored or shared.</p></div>
+                            <span class="shopbtn">✔️</span>
+                        </div>
+                        <div>
+                            <h4 class="font-size: 0.875rem; line-height: 1.25rem;font-weight: 700; glow">Privacy
+                                Guaranteed</h4>
+                            <p class="text">Your birth details are never stored or shared.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="kundali-form">
+                    <canvas></canvas>
+                    <form class="">
+                        <div class="display: grid; grid-template-columns: repeat(1, minmax(0, 1fr)); gap: 1.5rem;">
+                            <div class="input-group">
+                                <label class="kundali_items">Full Name</label>
+                                <input class="kundali_input_" type="text" placeholder="Your name"
+                                    fdprocessedid="a67hxy">
+                            </div>
+                            <div class="input-group">
+                                <label class="kundali_items">Date of Birth</label>
+                                <input class="kundali_input_" type="date">
+                            </div>
+                            <div class="input-group">
+                                <label class="kundali_items">Time of Birth</label>
+                                <input class="kundali_input_" type="time">
+                            </div>
+                            <div class="input-group">
+                                <label class="kundali_items">Place of Birth</label>
+                                <input class="kundali_input_" type="text" placeholder="City, Country"
+                                    fdprocessedid="i37qh">
                             </div>
                         </div>
-                        <div class="kundali-form">
-                            <canvas ></canvas>
-                            <form class="">
-                                <div class="display: grid; grid-template-columns: repeat(1, minmax(0, 1fr)); gap: 1.5rem;">
-                                    <div class="input-group">
-                                        <label class="kundali_items">Full Name</label>
-                                        <input class="kundali_input_" type="text" placeholder="Your name" fdprocessedid="a67hxy"></div>
-                                        <div class="input-group">
-                                            <label class="kundali_items">Date of Birth</label>
-                                            <input class="kundali_input_" type="date"></div>
-                                            <div class="input-group">
-                                                <label class="kundali_items">Time of Birth</label>
-                                                <input class="kundali_input_" type="time"></div>
-                                                <div class="input-group">
-                                                    <label class="kundali_items">Place of Birth</label>
-                                                    <input class="kundali_input_" type="text" placeholder="City, Country" fdprocessedid="i37qh"></div>
-                                                </div>
-                                                <button type="submit" class="submitbtn" fdprocessedid="2k6u4f">Generate Kundli</button>
-                                            </form>
-                                        </div>
-                                    </div>
-                                </section>
+                        <button type="submit" class="submitbtn" fdprocessedid="2k6u4f">Generate Kundli</button>
+                    </form>
+                </div>
+            </div>
+        </section>
         <!-- Shop -->
         <section class="shopframe" id="shop">
             <div class="shopheader">
